@@ -1,0 +1,135 @@
+:root{
+    --vermelho: #E50914; /* Variavel */
+    --preta: #141414;
+}
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+
+}
+
+header .container {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 25px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; 
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover  { 
+    color:#fff;
+}
+
+header nav { 
+    margin-right: 25px;
+}
+
+.filme-principal {
+    font-size: 25px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/download.jpg');
+
+    height: 550px;
+    background: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.filme-principal .sinopse{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    
+}
+
+.title{
+    margin-top: 5%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    font-size: 15px;
+
+    cursor:pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filme{
+    margin-top: 5px;
+}
+
+
+/* linha 1: root: acessa o codigo raiz do arquivo CSS
+
+linha 6: *: aplica uma padronização em qualquer browser
+
+linha 18: tag class: colocar a tag antes da classe define apenas o que a dentro do container
+
+linha 19: display: flex: é uma maneira de alinhar os elementos
+
+linha 20: flex direction: é a forma em que o css joga os elemntendo alinhados
+
+linha 21: align-items: trabalha os elementos na vertical
+
+linha 22: justify-content: trabalha os elementos na horizontal
+
+linha 38: tag class-container a:hover:  é quando o mouse passa por cima muda a propriedade
+
+
+*/
